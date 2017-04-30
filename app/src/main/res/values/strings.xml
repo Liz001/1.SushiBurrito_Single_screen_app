@@ -1,0 +1,24 @@
+<resources>
+<!-- Contacts -->
+    <string name="website">http://www.sushiburrito.it</string>
+    <string name="place"><a href="https://goo.gl/maps/DhayG4XoUc82">Via F. Lo Jacono, 26, 90144 Palermo</a></string>
+    <string name="email">sushiburrito@libero.it</string>
+    <string name="call">+393662248592 - +39091348698</string>
+    <string name="watch">Monday: closed \nTuesday - Thursday: 12-15, 18-23 \nFriday: 12-15, 18-00 \nSaturday - Sunday: 18-00</string>
+
+    <!-- Titles -->
+    <string name="app_name">SushiBurrito</string>
+    <string name="aboutus">About us</string>
+    <string name="products">Our products</string>
+
+    <!-- Descriptions -->
+    <string name="salmorito">Salmorito</string>
+    <string name="tunaroll">Tuna Roll</string>
+    <string name="whitefish">White Fish</string>
+
+    <string name="description">The first European Sushiburrito, made with nori seaweed and Japanese rice! Healthy, nutritious, fast and fresh products farm-to-fork! Sushiburrito, you bite the explosion of the senses!</string>
+
+
+
+
+</resources>

@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none"
+    tools:context="com.example.android.sushiburrito.MainActivity">
+
+    <LinearLayout
+        android:id="@+id/activity_main"
+        style="@style/mainLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/sushiburritologo" />
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:scaleType="centerCrop"
+            android:src="@drawable/sushiburritobanner03" />
+
+        <TextView
+            style="@style/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aboutus" />
+
+        <TextView
+            style="@style/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <TextView
+            style="@style/title"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingBottom="@dimen/paddingBottomTitle2"
+            android:text="@string/products" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/salmorito"
+                android:layout_width="@dimen/sushiburrito_image_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeftRight"
+                android:layout_marginRight="@dimen/marginLeftRight"
+                android:layout_weight="1"
+                android:src="@drawable/salmorito" />
+
+            <ImageView
+                android:id="@+id/tunaroll"
+                android:layout_width="@dimen/sushiburrito_image_width"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_toRightOf="@id/salmorito"
+                android:layout_weight="1"
+                android:src="@drawable/tunaroll" />
+
+            <ImageView
+                android:id="@+id/whitefish"
+                android:layout_width="@dimen/sushiburrito_image_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeftRight"
+                android:layout_marginRight="@dimen/marginLeftRight"
+                android:layout_toRightOf="@id/tunaroll"
+                android:layout_weight="1"
+                android:src="@drawable/whitefish" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/salmorito_text"
+                android:layout_width="@dimen/sushiburrito_name_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeftRight"
+                android:layout_marginRight="@dimen/marginLeftRight"
+                android:layout_weight="1"
+                android:text="@string/salmorito"
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/tunaroll_text"
+                android:layout_width="@dimen/sushiburrito_name_width"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/tunaroll"
+
+                android:textColor="@android:color/white" />
+
+            <TextView
+                android:id="@+id/whitefish_text"
+                android:layout_width="@dimen/sushiburrito_name_width"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/marginLeftRight"
+                android:layout_marginRight="@dimen/marginLeftRight"
+                android:layout_weight="1"
+                android:text="@string/whitefish"
+                android:textColor="@android:color/white" />
+
+        </LinearLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeftRelativeLayout"
+            android:layout_marginTop="32dp">
+
+            <ImageView
+
+                android:id="@+id/iconplace"
+                style="@style/iconContacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iconplace" />
+
+            <TextView
+                android:id="@+id/place_text"
+                style="@style/contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconplace"
+                android:layout_toEndOf="@id/iconplace"
+                android:layout_toRightOf="@id/iconplace"
+                android:text="@string/place" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeftRelativeLayout">
+
+            <ImageView
+
+                android:id="@+id/iconweb"
+                style="@style/iconContacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iconweb" />
+
+            <TextView
+                android:id="@+id/website_text"
+                style="@style/contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconweb"
+                android:layout_toEndOf="@id/iconweb"
+                android:layout_toRightOf="@id/iconweb"
+                android:autoLink="all"
+                android:linksClickable="true"
+                android:text="@string/website" />
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeftRelativeLayout">
+
+            <ImageView
+
+                android:id="@+id/iconcall"
+                style="@style/iconContacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iconcall" />
+
+            <TextView
+                android:id="@+id/call_text"
+                style="@style/contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconcall"
+                android:layout_toEndOf="@id/iconcall"
+                android:layout_toRightOf="@id/iconcall"
+                android:autoLink="all"
+                android:linksClickable="true"
+                android:text="@string/call" />
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeftRelativeLayout">
+
+            <ImageView
+                android:id="@+id/iconemail"
+                style="@style/iconContacts"
+                android:layout_width="wrap_content"
+
+                android:layout_height="wrap_content"
+                android:src="@drawable/iconemail" />
+
+            <TextView
+                android:id="@+id/email_text"
+                style="@style/contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignBottom="@id/iconemail"
+                android:layout_toEndOf="@id/iconemail"
+                android:layout_toRightOf="@id/iconemail"
+                android:autoLink="all"
+                android:linksClickable="true"
+                android:text="@string/email" />
+
+        </RelativeLayout>
+
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/marginLeftRelativeLayout">
+
+            <ImageView
+                android:id="@+id/iconwatch"
+                style="@style/iconContacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/iconwatch" />
+
+            <TextView
+                android:id="@+id/watch_text"
+                style="@style/contacts"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignTop="@id/iconwatch"
+                android:layout_toEndOf="@id/iconwatch"
+                android:layout_toRightOf="@id/iconwatch"
+                android:text="@string/watch" />
+
+        </RelativeLayout>
+
+    </LinearLayout>
+</ScrollView>

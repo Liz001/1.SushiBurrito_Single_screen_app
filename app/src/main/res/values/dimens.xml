@@ -1,0 +1,18 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="padding">14dp</dimen>
+    <dimen name="paddingbottom">30dp</dimen>
+    <dimen name="textTitleDescription">16sp</dimen>
+    <dimen name="paddingBottomTitle2">14dp</dimen>
+
+    <dimen name="sushiburrito_image_width">0dp</dimen>
+    <dimen name="sushiburrito_name_width">0dp</dimen>
+
+
+    <dimen name="marginLeftRight">30dp</dimen>
+
+    <dimen name="marginLeftRelativeLayout">4dp</dimen>
+</resources>
